@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+  <title>Hsuan's Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="https://hsuan017.github.io/together/sun.png" width=50px alt"sunny logo">Hsuan's Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">作品集</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="H2.html">大學活動</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            追星日常
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="H3.html#jj">林俊傑</a>
+            <a class="dropdown-item" href="H3.html#kk">王俊凱</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="H4.html">關於我</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+  <section id="cp">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>
+            <center>大學活動</center>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="pic" src="https://hsuan017.github.io/together/DSC03894.JPG" class="card-img-top" alt="Camp">
+            <div class="card-body">
+              <h5 class="card-title">數位志工隊</h5>
+              <p class="card-text">
+              <h5>時間:</h5>2020.07.21-2020.07.24，四天三夜<br>
+              <h5>地點:</h5>嘉義縣中埔鄉和睦國民小學<br>
+              <h5>主辦單位:</h5>國立嘉義大學 數位學習設計與管理學系</p>
+              <a href="https://www.ncyu.edu.tw/etech/itemize.aspx?itemize_sn=163166" button type="button" class="btn btn-outline-primary">更多資訊</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="pic" src="https://github.com/hsuan017/image/blob/main/%E5%BB%A3%E5%91%8A%E7%87%9F.jpg?raw=true" class="card-img-top" alt="Camp">
+            <div class="card-body">
+              <h5 class="card-title">數位廣告營</h5>
+              <p class="card-text">
+              <h5>時間:</h5>2021.02.03-2021.02.06，四天三夜<br>
+              <h5>地點:</h5>國立嘉義大學民雄校區<br>
+              <h5>主辦單位:</h5>國立嘉義大學 數位學習設計與管理學系</p>
+              <a href="https://www.ncyu.edu.tw/etech/content.aspx?site_content_sn=60712" button type="button" class="btn btn-outline-primary">更多資訊</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <button type="button" id="BackTop" class="toTop-arrow"></button>
+  <script>
+    $(function() {
+      $('#BackTop').click(function() {
+        $('html,body').animate({
+          scrollTop: 0
+        }, 333);
+      });
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+  </script>
+
+</body>
+
+</html>
